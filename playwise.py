@@ -1,10 +1,10 @@
-from playlist_engine_1 import PlaylistEngine
-from playback_history_2 import PlaybackHistory
-from song_rating_tree_3 import SongRatingBST
-from song_lookup_4 import SongLookup
-from playlist_sorter_5 import PlaylistSorter
-from performance_analyzer_6 import PerformanceAnalyzer
-from system_snapshot_7 import SystemSnapshot
+from modules.playlist_engine_1 import PlaylistEngine
+from modules.playback_history_2 import PlaybackHistory
+from modules.song_rating_tree_3 import SongRatingBST
+from modules.song_lookup_4 import SongLookup
+from modules.playlist_sorter_5 import PlaylistSorter
+from modules.performance_analyzer_6 import PerformanceAnalyzer
+from modules.system_snapshot_7 import SystemSnapshot
 
 class PlayWise:
     def __init__(self):
