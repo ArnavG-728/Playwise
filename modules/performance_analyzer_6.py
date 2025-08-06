@@ -1,17 +1,26 @@
-# performance_analyzer.py - Analyze Time and Space Complexity
+# performance_analyzer_6.py - Analyze Time and Space Complexity
 
 import time
 import tracemalloc
 
 class PerformanceAnalyzer:
+    """
+    Measures the time and space complexity of operations on the playlist.
+    """
     def __init__(self, playlist_engine):
+        # The PlaylistEngine instance whose performance is to be analyzed.
         self.engine = playlist_engine
 
     def run_analysis(self):
+        """
+        Runs a performance analysis on a specific operation (e.g., reversing the playlist).
+        The time complexity of this method is determined by the analyzed operation (O(n) for reverse_playlist).
+        The space complexity is O(1) as it only stores a few variables for measurement.
+        """
         tracemalloc.start()
         start_time = time.time()
 
-        self.engine.reverse_playlist()  # Example operation
+        self.engine.reverse_playlist()  # Example operation to analyze
 
         end_time = time.time()
         current, peak = tracemalloc.get_traced_memory()
